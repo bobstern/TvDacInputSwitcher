@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C4CF74362FE7F2E5005BBFFA /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = C4CF74352FE7F2E5005BBFFA /* ArgumentParser */; };
+		C4CF74392FE7F2F9005BBFFA /* SwiftMIDICore in Frameworks */ = {isa = PBXBuildFile; productRef = C4CF74382FE7F2F9005BBFFA /* SwiftMIDICore */; };
+		C4CF743B2FE7F2F9005BBFFA /* SwiftMIDIInternals in Frameworks */ = {isa = PBXBuildFile; productRef = C4CF743A2FE7F2F9005BBFFA /* SwiftMIDIInternals */; };
+		C4CF743E2FE7F304005BBFFA /* SwiftMIDIIO in Frameworks */ = {isa = PBXBuildFile; productRef = C4CF743D2FE7F304005BBFFA /* SwiftMIDIIO */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		C4CF74212FE7F268005BBFFA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4CF74392FE7F2F9005BBFFA /* SwiftMIDICore in Frameworks */,
+				C4CF74362FE7F2E5005BBFFA /* ArgumentParser in Frameworks */,
+				C4CF743B2FE7F2F9005BBFFA /* SwiftMIDIInternals in Frameworks */,
+				C4CF743E2FE7F304005BBFFA /* SwiftMIDIIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +88,10 @@
 			);
 			name = TvDacInputSwitcher;
 			packageProductDependencies = (
+				C4CF74352FE7F2E5005BBFFA /* ArgumentParser */,
+				C4CF74382FE7F2F9005BBFFA /* SwiftMIDICore */,
+				C4CF743A2FE7F2F9005BBFFA /* SwiftMIDIInternals */,
+				C4CF743D2FE7F304005BBFFA /* SwiftMIDIIO */,
 			);
 			productName = TvDacInputSwitcher;
 			productReference = C4CF74232FE7F268005BBFFA /* TvDacInputSwitcher */;
@@ -106,6 +121,11 @@
 			);
 			mainGroup = C4CF741A2FE7F268005BBFFA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C4CF74342FE7F2E5005BBFFA /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				C4CF74372FE7F2F9005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-core" */,
+				C4CF743C2FE7F304005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-io" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C4CF74242FE7F268005BBFFA /* Products */;
 			projectDirPath = "";
@@ -295,6 +315,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4CF74342FE7F2E5005BBFFA /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.2;
+			};
+		};
+		C4CF74372FE7F2F9005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/swift-midi-core";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		C4CF743C2FE7F304005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-io" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/swift-midi-io";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4CF74352FE7F2E5005BBFFA /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4CF74342FE7F2E5005BBFFA /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		C4CF74382FE7F2F9005BBFFA /* SwiftMIDICore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4CF74372FE7F2F9005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-core" */;
+			productName = SwiftMIDICore;
+		};
+		C4CF743A2FE7F2F9005BBFFA /* SwiftMIDIInternals */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4CF74372FE7F2F9005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-core" */;
+			productName = SwiftMIDIInternals;
+		};
+		C4CF743D2FE7F304005BBFFA /* SwiftMIDIIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4CF743C2FE7F304005BBFFA /* XCRemoteSwiftPackageReference "swift-midi-io" */;
+			productName = SwiftMIDIIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4CF741B2FE7F268005BBFFA /* Project object */;
 }
